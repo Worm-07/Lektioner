@@ -1,0 +1,15 @@
+C:\Users\emilc\Skola\C-sharp-intro\HejVarld\bin\Debug\net10.0\HejVarld.exe
+C:\Users\emilc\Skola\C-sharp-intro\HejVarld\bin\Debug\net10.0\HejVarld.deps.json
+C:\Users\emilc\Skola\C-sharp-intro\HejVarld\bin\Debug\net10.0\HejVarld.runtimeconfig.json
+C:\Users\emilc\Skola\C-sharp-intro\HejVarld\bin\Debug\net10.0\HejVarld.dll
+C:\Users\emilc\Skola\C-sharp-intro\HejVarld\bin\Debug\net10.0\HejVarld.pdb
+C:\Users\emilc\Skola\C-sharp-intro\HejVarld\obj\Debug\net10.0\HejVarld.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emilc\Skola\C-sharp-intro\HejVarld\obj\Debug\net10.0\HejVarld.AssemblyInfoInputs.cache
+C:\Users\emilc\Skola\C-sharp-intro\HejVarld\obj\Debug\net10.0\HejVarld.AssemblyInfo.cs
+C:\Users\emilc\Skola\C-sharp-intro\HejVarld\obj\Debug\net10.0\HejVarld.csproj.CoreCompileInputs.cache
+C:\Users\emilc\Skola\C-sharp-intro\HejVarld\obj\Debug\net10.0\HejVarld.dll
+C:\Users\emilc\Skola\C-sharp-intro\HejVarld\obj\Debug\net10.0\refint\HejVarld.dll
+C:\Users\emilc\Skola\C-sharp-intro\HejVarld\obj\Debug\net10.0\HejVarld.pdb
+C:\Users\emilc\Skola\C-sharp-intro\HejVarld\obj\Debug\net10.0\HejVarld.genruntimeconfig.cache
+C:\Users\emilc\Skola\C-sharp-intro\HejVarld\obj\Debug\net10.0\ref\HejVarld.dll
+C:\Users\emilc\Skola\C-sharp-intro\HejVarld\obj\Debug\net10.0\HejVarld.sourcelink.json

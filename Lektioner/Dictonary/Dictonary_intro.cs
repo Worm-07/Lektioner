@@ -1,11 +1,14 @@
 // With values from the start
 Dictionary<string, int> ages = new()
 {
-    ["Andreas"] = 49,
+    ["Andreas"] = 5,
     ["Emil"] = 19,
+    ["Patrick"] = 67
 };
-
 Console.WriteLine($"Emil is {ages["Emil"]} years old");
+Console.WriteLine($"Andreas is {ages["Andreas"]} years old");
+Console.WriteLine($"Patrick is {ages["Patrick"]} years old");
+
 
 
 
@@ -28,3 +31,11 @@ else
 {
     Console.WriteLine($"{toTranslate} finns inte i vår engelska ordlista");
 }
+
+svToEn["råtta"] = "dirty rat";
+svToEn["rast"] = "break";
+
+
+svToEn.TryGetValue(toTranslate, out string possibleValue);
+Console.WriteLine($"Using TryGetValue: {possibleValue}");
+Console.WriteLine($"is TryGetValue null? {possibleValue == null}");

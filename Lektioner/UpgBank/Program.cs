@@ -1,5 +1,9 @@
 ﻿Console.WriteLine("Välkommen till banken!");
 
+Console.WriteLine("Ange ditt kontonummer: ");
+
+
+
 User user = new("Emil", "Chau");
 
 Console.WriteLine("\n===Kontoinformation===");

@@ -25,7 +25,7 @@ string? toTranslate = Console.ReadLine();
 
 if (svToEn.ContainsKey(toTranslate!))
 {
-    Console.WriteLine($"{toTranslate} är {svToEn[toTranslate]} på engelska");
+    Console.WriteLine($"{toTranslate} är {svToEn[toTranslate!]} på engelska");
 }
 else
 {
@@ -36,6 +36,13 @@ svToEn["råtta"] = "dirty rat";
 svToEn["rast"] = "break";
 
 
-svToEn.TryGetValue(toTranslate, out string possibleValue);
+svToEn.TryGetValue(toTranslate!, out string possibleValue);
 Console.WriteLine($"Using TryGetValue: {possibleValue}");
 Console.WriteLine($"is TryGetValue null? {possibleValue == null}");
+
+
+Console.WriteLine("\nHela ordlistan");
+foreach (var (svWord, enWord) in svToEn)
+{
+    Console.WriteLine($"{svWord} = {enWord}");
+}

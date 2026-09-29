@@ -15,14 +15,56 @@ List<int> points = [];
 
 while (true)
 {
-
+    int summa = 0;
+    Console.WriteLine("Ange 0 för att ta bort senaste poänget");
     Console.WriteLine("\nAnge ditt poäng i heltal: ");
-    int point = int.Parse(Console.ReadLine()!);
-    points.Add(point);
+    string input = Console.ReadLine()!;
 
-    // Visa alla pong hittills
-    foreach (int i in points)
+    if (int.TryParse(input, out int point))
     {
-        Console.Write(i + " + ");
+        if (point == 0)
+        {
+            if (points.Count == 0)
+            {
+                Console.WriteLine("Det finns inget poäng att ta bort");
+            }
+            else
+            {
+                points.RemoveAt(points.Count - 1);
+            }
+        }
+        else
+        {
+            points.Add(point);
+        }
+    }
+    else
+    {
+        Console.WriteLine("\nDet är inget heltal!\n");
+    }
+
+    if (points.Count > 0)
+    {
+        foreach (int poäng in points)
+        {
+            summa += poäng;
+        }
+
+        for (int i = 0; i < points.Count; i++)
+        {
+            Console.Write($"{points[i]}");
+
+            if (i < points.Count - 1)
+            {
+                Console.Write(" + ");
+            }
+        }
+
+        Console.WriteLine($" = {summa}");
+
+        Console.WriteLine($"Antal poäng : {points.Count}");
+
+        int störst = points.Max();
+        Console.WriteLine($"\nHögsta poäng är: {störst}");
     }
 }

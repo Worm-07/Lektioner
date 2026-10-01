@@ -6,11 +6,19 @@ class Band(string name)
 
     public void Hire(Musician musician)
     {
-        Members.Add(musician);
+        if (!Members.Contains(musician))
+        {
+            Members.Add(musician);
+            musician.JoinBand(this);
+        }
+
     }
 
     public void Fire(Musician musician)
     {
-        Members.Remove(musician);
+        if (Members.Remove(musician))
+        {
+            musician.LeaveBand(this);
+        }
     }
 }
